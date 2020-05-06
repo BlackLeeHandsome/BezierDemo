@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DD2F0EF623AB63B900975AC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F0EF523AB63B900975AC0 /* AppDelegate.m */; };
-		DD2F0EF923AB63B900975AC0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F0EF823AB63B900975AC0 /* SceneDelegate.m */; };
 		DD2F0EFC23AB63B900975AC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F0EFB23AB63B900975AC0 /* ViewController.m */; };
 		DD2F0EFF23AB63B900975AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2F0EFD23AB63B900975AC0 /* Main.storyboard */; };
 		DD2F0F0123AB63CA00975AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2F0F0023AB63CA00975AC0 /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		DD2F0F0723AB63CA00975AC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F0F0623AB63CA00975AC0 /* main.m */; };
 		DD2F0F1123AB63CA00975AC0 /* BezierDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F0F1023AB63CA00975AC0 /* BezierDemoTests.m */; };
 		DD2F0F1C23AB63CA00975AC0 /* BezierDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F0F1B23AB63CA00975AC0 /* BezierDemoUITests.m */; };
+		DD2F0F2B23AB647100975AC0 /* BezierView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F0F2923AB647100975AC0 /* BezierView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		DD2F0EF123AB63B900975AC0 /* BezierDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BezierDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2F0EF423AB63B900975AC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD2F0EF523AB63B900975AC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD2F0EF723AB63B900975AC0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		DD2F0EF823AB63B900975AC0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		DD2F0EFA23AB63B900975AC0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DD2F0EFB23AB63B900975AC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DD2F0EFE23AB63B900975AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +52,8 @@
 		DD2F0F1723AB63CA00975AC0 /* BezierDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BezierDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2F0F1B23AB63CA00975AC0 /* BezierDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierDemoUITests.m; sourceTree = "<group>"; };
 		DD2F0F1D23AB63CA00975AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2F0F2923AB647100975AC0 /* BezierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierView.m; sourceTree = "<group>"; };
+		DD2F0F2A23AB647100975AC0 /* BezierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +106,10 @@
 			children = (
 				DD2F0EF423AB63B900975AC0 /* AppDelegate.h */,
 				DD2F0EF523AB63B900975AC0 /* AppDelegate.m */,
-				DD2F0EF723AB63B900975AC0 /* SceneDelegate.h */,
-				DD2F0EF823AB63B900975AC0 /* SceneDelegate.m */,
 				DD2F0EFA23AB63B900975AC0 /* ViewController.h */,
 				DD2F0EFB23AB63B900975AC0 /* ViewController.m */,
+				DD2F0F2A23AB647100975AC0 /* BezierView.h */,
+				DD2F0F2923AB647100975AC0 /* BezierView.m */,
 				DD2F0EFD23AB63B900975AC0 /* Main.storyboard */,
 				DD2F0F0023AB63CA00975AC0 /* Assets.xcassets */,
 				DD2F0F0223AB63CA00975AC0 /* LaunchScreen.storyboard */,
@@ -270,7 +270,7 @@
 				DD2F0EFC23AB63B900975AC0 /* ViewController.m in Sources */,
 				DD2F0EF623AB63B900975AC0 /* AppDelegate.m in Sources */,
 				DD2F0F0723AB63CA00975AC0 /* main.m in Sources */,
-				DD2F0EF923AB63B900975AC0 /* SceneDelegate.m in Sources */,
+				DD2F0F2B23AB647100975AC0 /* BezierView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JRZLDDT6T;
 				INFOPLIST_FILE = BezierDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JRZLDDT6T;
 				INFOPLIST_FILE = BezierDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
